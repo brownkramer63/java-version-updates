@@ -34,8 +34,11 @@ public class Main {
                 break;
         }
 
+        System.out.println("Operation Task");
+        calculate(3,5,MathOperations.ADD);
 
-
+        System.out.println("how to retrieve the constant value");
+        System.out.println(Currency.PENNY.getValue());
 
 
 
