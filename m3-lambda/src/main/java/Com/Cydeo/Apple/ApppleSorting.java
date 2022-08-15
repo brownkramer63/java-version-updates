@@ -2,5 +2,7 @@ package Com.Cydeo.Apple;
 
 public interface ApppleSorting {
 
-    public void applesort();
+  static boolean test(Apple apple) {
+    return true;
+  }
 }

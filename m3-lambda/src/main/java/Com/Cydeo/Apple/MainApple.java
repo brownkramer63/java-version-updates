@@ -1,21 +1,36 @@
 package Com.Cydeo.Apple;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainApple {
     public static void main(String[] args) {
 
+List<Apple> inventory = new ArrayList<>();
 
-        MainApple sort1 = new MainApple();
+inventory.add(new Apple(300,Color.GREEN));
+inventory.add(new Apple(100,Color.GREEN));
+inventory.add(new Apple(30,Color.GREEN));
+inventory.add(new Apple(200,Color.RED));
 
-        GreenApple greenApple= new GreenApple();
-        HeavyApple heavyApple = new HeavyApple();
+List<Apple> heavyApple= sortApples(inventory, new HeavyApple());
+        System.out.println(heavyApple);
 
-        sort1.applesorting(greenApple);
-        sort1.applesorting(heavyApple);
+        List<Apple> greenApple= sortApples(inventory,new GreenApple());
 
 
     }
-    private void applesorting(ApppleSorting apt){
-        apt.applesort();
+
+    private static List<Apple> sortApples(List<Apple> inventory, ApppleSorting sorting){
+
+        List<Apple> result = new ArrayList<>();
+
+        for (Apple apple: inventory){
+            if (ApppleSorting.test(apple)){
+                result.add(apple);
+            }
+        }
+        return result;
     }
 
 }

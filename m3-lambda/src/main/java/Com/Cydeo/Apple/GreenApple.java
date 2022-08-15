@@ -1,8 +1,9 @@
 package Com.Cydeo.Apple;
 
 public class GreenApple implements ApppleSorting{
+
     @Override
-    public void applesort() {
-        System.out.println("if apple green sort");
+    public boolean test(Apple apple) {
+        return apple.getColor().equals(Color.GREEN);
     }
 }
