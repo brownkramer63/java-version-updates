@@ -11,8 +11,15 @@ public class CountTest {
         System.out.println("Number of odd integers = " + count);
     }
 
-    public static <T> void countIf(){
+    private static <T> int countIf(List<T> c, UnaryPredicate<T> p ){
 
+        int count = 0;
+        for (T elem: c){
+            if (p.test(elem)){
+                ++count;
+            }
+        }
+return count;
     }
 
 }
