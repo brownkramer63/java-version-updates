@@ -1,4 +1,4 @@
-package Com.Cydeo;
+package Com.Cydeo.ArraySort;
 
 public class BubbleSort implements Sorting{
     @Override

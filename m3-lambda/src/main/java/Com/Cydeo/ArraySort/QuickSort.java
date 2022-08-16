@@ -1,4 +1,4 @@
-package Com.Cydeo;
+package Com.Cydeo.ArraySort;
 
 public class QuickSort implements Sorting{
 

@@ -1,4 +1,4 @@
-package Com.Cydeo;
+package Com.Cydeo.ArraySort;
 @FunctionalInterface
 public interface Sorting {
 
