@@ -1,8 +1,8 @@
-package Com.Cydeo.Apple;
+package Com.Cydeo.AppleStrategyDesignPattern;
 
 public class GreenApple implements ApppleSorting{
 
-    @Override
+
     public boolean test(Apple apple) {
         return apple.getColor().equals(Color.GREEN);
     }

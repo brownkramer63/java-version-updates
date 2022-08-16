@@ -1,9 +1,9 @@
-package Com.Cydeo.Apple;
+package Com.Cydeo.AppleStrategyDesignPattern;
 
 public class HeavyApple implements ApppleSorting{
 
-    @Override
-    public boolean test(Apple apple) {
+
+    public  boolean test(Apple apple) {
         return apple.getWeight()>200;
     }
 }

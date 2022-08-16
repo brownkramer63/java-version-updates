@@ -1,4 +1,4 @@
-package Com.Cydeo.Apple;
+package Com.Cydeo.AppleStrategyDesignPattern;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

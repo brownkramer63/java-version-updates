@@ -1,4 +1,4 @@
-package Com.Cydeo.Apple;
+package Com.Cydeo.AppleStrategyDesignPattern;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,7 @@ List<Apple> heavyApple= sortApples(inventory, new HeavyApple());
 
         List<Apple> greenApple= sortApples(inventory,new GreenApple());
 
+//ApppleSorting weightApple = (Apple apple) -> apple.getWeight()>200;
 
     }
 
@@ -32,5 +33,7 @@ List<Apple> heavyApple= sortApples(inventory, new HeavyApple());
         }
         return result;
     }
+
+
 
 }

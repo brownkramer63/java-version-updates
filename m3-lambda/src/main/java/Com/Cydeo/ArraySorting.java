@@ -11,6 +11,7 @@ public class ArraySorting {
         as.sort(bs);
 
 
+        Sorting quicksort= () -> System.out.println("Quick Sort");
 
 
 
