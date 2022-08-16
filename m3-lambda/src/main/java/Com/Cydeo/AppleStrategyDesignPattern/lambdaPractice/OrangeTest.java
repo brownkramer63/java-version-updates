@@ -22,6 +22,13 @@ public class OrangeTest {
 
         prettyPrintApple(inventory,orangeLambda);
 
+        OrangeFormatter fancyFormater = orange -> {
+         //we have curly brackets because there is more than one statement
+         String ch = orange.getWeight()>200 ? "Heavy": "Light";
+         return "A "+ ch+" "+orange.getColor()+ " orange";
+
+        };
+        prettyPrintApple(inventory,fancyFormater);
 
     }
 
