@@ -1,5 +1,7 @@
 package com.cydeo.Tasks;
 
+import java.util.Comparator;
+
 public class DishTask {
     public static void main(String[] args) {
 
@@ -27,10 +29,10 @@ public class DishTask {
                 .limit(3)
                 .forEach(System.out::println);
 
-        System.out.println("--4-------");
+        System.out.println("--4-------"); //error on this one working now
         DishData.getAll().stream()
                 .filter(i-> i.getCalories()<400)
-                .sorted()
+                .sorted(Comparator.comparing(Dish::getCalories))
                 .map(Dish::getName)
                 .forEach(System.out::println);
 
