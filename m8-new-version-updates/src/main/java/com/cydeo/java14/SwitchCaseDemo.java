@@ -33,5 +33,18 @@ public class SwitchCaseDemo {
             case 2 -> System.out.println("this month has 28 or 29 days");
             default -> System.out.println("invalid month"   );
         }
+
+        System.out.println("******************************");
+
+
+
+
+
+
+
+
+
+
+
     }
 }
