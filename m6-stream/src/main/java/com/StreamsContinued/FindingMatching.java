@@ -1,10 +1,8 @@
-package com.FindingMaching;
+package com.StreamsContinued;
 
 import com.cydeo.Tasks.Dish;
 import com.cydeo.Tasks.DishData;
 
-import javax.swing.text.html.Option;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -61,6 +59,8 @@ public class FindingMatching {
         System.out.println("Max");
         Optional<Dish> dmax=DishData.getAll().stream().max(Comparator.comparing(Dish::getCalories));
         System.out.println(dmax);
+
+
 
 
 
